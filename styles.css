@@ -1,0 +1,203 @@
+:root {
+    --main: #f4f4f4;
+    --light: #FFFFFF;
+    --dark: #E8E8E8;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    font-family: 'roboto' , sans-serif;
+}
+
+body .wrapper {
+    display: grid;
+    grid-template-rows: 84px 337px 110px 136px;
+    height: 100vh;
+}
+header {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    margin: 30px 40px;
+}
+.button {
+    cursor: pointer;
+    margin: 2px;
+}
+header .expand-arrow, .hamburger{
+    display: flex;
+    justify-content: center;
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
+    box-shadow:  5px 5px 10px var(--dark),
+                -5px -5px 10px var(--light);
+}
+header .expand-arrow div{
+    width: 22px;
+    height: 22px;
+    margin: 10px;
+    background-image: url('https://img.icons8.com/?size=256&id=2760&format=png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header .hamburger div {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    background-image: url('https://img.icons8.com/?size=256&id=36389&format=png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card div{
+    width: 310px;
+    height: 310px;
+    border-radius: 10px;
+    box-shadow:  5px 5px 10px #cfcfcf,
+                -5px -5px 10px  #ffffff;
+    background-image: url('https://i.scdn.co/image/ab67616d0000b2735c53799f473fa3e1a48c00ed');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bar {
+    min-width: 80%;
+    margin: auto;
+}
+
+.bar .song-info {
+    display: grid;
+    justify-content: center;
+}
+.bar .song-name {
+    margin: 2px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+.bar .band-name {
+    margin: 2px auto;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.bar .progress-bar {
+    position: relative;
+    height: 6px;
+    margin: 10px 0;
+    box-shadow:  2px 2px 2px var(--dark),
+                -2px -2px 2px var(--light);
+}
+.bar .progress-bar .circle {
+    position: absolute;
+    left: 80%;
+    top: -5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50px;
+    background-color: #f4f4f4;
+    box-shadow:  1px 1px 1px #bebebe,
+                -1px -1px 1px var(--dark);
+}
+.bar-numbers {
+    display: flex;
+    justify-content: space-between;
+}
+.bar .bar-numbers {
+    font-size: 11px;
+    font-weight: 600;
+}
+.bar .bar-numbers p{
+    margin: 0;
+}
+.buttons {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 40px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.buttons .previous, .next {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    box-shadow:  5px 5px 10px var(--dark),
+                -5px -5px 10px  var(--light);
+}
+.buttons .previous div{
+    width: 22px;
+    height: 22px;
+    margin: 10px;
+    background-image: url('https://img.icons8.com/?size=256&id=atqrWJjzKIFh&format=png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+.buttons .next div{
+    width: 22px;
+    height: 22px;
+    margin: 10px;
+    background-image: url('https://img.icons8.com/?size=256&id=s1kxUJVDmJvK&format=png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+.buttons .repeat, .stop {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    box-shadow:  5px 5px 11px var(--dark),
+                -5px -5px 11px  var(--light);
+}
+.buttons .repeat div{
+    width: 24px;
+    height: 24px;
+    margin: 14px;
+    background-image: url('https://img.icons8.com/?size=256&id=Fm2D9kfJS33u&format=png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+.buttons .stop div{
+    width: 24px;
+    height: 24px;
+    margin: 14px;
+    background-image: url('https://img.icons8.com/?size=256&id=yuL17jVfISu0&format=png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+.buttons .play {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    box-shadow:  7px 7px 13px var(--dark),
+                -7px -7px 13px  var(--light);
+}
+.buttons .play div {
+    width: 34px;
+    height: 34px;
+    margin: 18px;
+    background-image: url('https://img.icons8.com/?size=256&id=fjx0LfGCNuZb&format=png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+
