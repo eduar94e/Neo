@@ -12,7 +12,7 @@ body {
 
 body .wrapper {
     display: grid;
-    grid-template-rows: 84px 337px 110px 136px;
+    grid-template-rows: 84px 337px 130px 136px;
     height: 100vh;
 }
 header {
